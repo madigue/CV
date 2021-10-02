@@ -1,0 +1,591 @@
+body {
+  margin: 0;
+  font-size: 28px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.nav{
+   z-index: 2;
+  position: relative;
+  background-color: #4D54D8;
+  text-decoration: none;
+}
+label{
+ position: relative;
+ top: 0px;
+ left: 180px; 
+ font-size: 40px;
+ display: none;
+}
+#toggle{
+  display: none;
+}
+.header {
+  background-color: #1921B1;
+  padding: 30px;
+  text-align: center;
+}
+#button{
+  overflow: visible;
+  position: absolute;
+  margin: 10px 10px;
+}
+#navbar {
+  padding-right: 200px;
+  overflow: hidden;
+  background-color: #4D54D8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.section_main{
+  height: 100vh;
+  background-color: #4D54D8;
+}
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+#helloWorld {  
+  color: #FFDA73; 
+} 
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color:white;
+  font-size: 130px;
+}
+.me{
+  position: absolute;
+  left: 170px;
+  bottom: 250px;
+    animation-name: myAnimation;
+    animation-duration: 900ms;
+    animation-fill-mode: forwards;
+}
+.madik{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+#madikosh{
+  width: 800px;
+}
+.btn {
+  position: relative;
+  z-index: 2;
+  margin-top: 590px;
+  margin-left: 340px;
+  background-color: #FFDA73;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 200px;
+  height: 55px;
+}
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #FFDA73;
+}
+@keyframes myAnimation{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+    from {opacity: 0; transform: scale(.7,.7)}
+    to {opacity: 1;}
+}
+.madik{
+    animation-name: myAnimation;
+    animation-duration: 900ms;
+    animation-fill-mode: forwards;
+}
+.hidden {
+  opacity: 0;
+}
+.scroll{
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  transform: rotate(450deg);
+  font-size: 20px;
+  bottom: 110px;
+  left: 120px;
+  animation-name: myAnimation;
+    animation-duration: 900ms;
+    animation-fill-mode: forwards;
+}
+h2{
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: black;
+  top: 950px;
+  left: 620px;
+  text-decoration: line-through #FFDA73;
+  animation: fade-in 1.4s;
+}
+.round{
+  position: absolute;
+  bottom: -500px;
+  left: 400px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  animation: fade-in 1.4s;
+}
+h3{
+  position: absolute;
+  left: 700px;
+  top: 1050px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #4D54D8;
+  animation: fade-in 1.4s;
+}
+h4{
+  position: absolute;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  left: 700px;
+  top: 1100px;
+  font-size: 20px;
+  animation: fade-in 1.4s;
+}
+
+.section_about{
+  height: 100vh;
+  background-color: white;
+}
+.section_cards{
+  height: 100vh;
+  background-color: #FFDA73;
+}
+.container {
+  position: absolute;
+  height: 300px;
+  width: 600px;
+  top: 1850px;
+  left: 420px;
+  display: flex;
+  animation: fade-in 1.4s;
+}
+
+.card {
+  display: flex;
+  height: 280px;
+  width: 200px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+.logo {
+  fill: #17141d;
+  stroke-width: 2px;
+  padding-bottom: 40px;
+  width: 150px;
+  height: 150px;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+h5{
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: black;
+  top: 1700px;
+  left: 650px;
+  text-decoration: line-through #FFDA73;
+  font-size: 40px;
+  animation: fade-in 1.4s;
+}
+.carousel{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 470px;
+  top: 2500px;
+  animation: fade-in 1.4s;
+}
+.mySlides{
+  border: 20px solid #555;
+}
+h6{
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: black;
+  top: -120px;
+  left: 170px;
+  text-decoration: line-through #FFDA73;
+  font-size: 40px;
+  animation: fade-in 1.4s;
+}
+h7{
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: gray;
+  top: -55px;
+  left: 180px;
+  font-size: 20px;
+  animation: fade-in 1.4s;
+}
+h8{
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  left: 635px;
+  top: 3340px;
+  color: black;
+  text-decoration: line-through #FFDA73;
+  font-size: 40px;
+  animation: fade-in 1.4s;
+}
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin: 0 20px 20px 0;
+    padding: 6px;
+    color: #000;
+    animation: fade-in 1.4s;
+}
+.vk {
+  position: absolute;
+  display: inline;
+  top: 3400px;
+  left: 590px;
+}
+.instagram {
+  position: absolute;
+  display: inline;
+  top: 0px;
+}
+.telegram {
+  position: absolute;
+  display: inline;
+  top: 0px;
+}
+.google-pluse {
+  position: absolute;
+  display: inline;
+  top: 0px;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4D54D8;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #4D54D8;
+}
+
+.container2 {
+  position: absolute;
+  top: 3470px;
+  width: 500px;
+  left: 490px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-size: 15px;
+  animation: fade-in 1.4s;
+}
+footer{
+  position: absolute;
+  background: #000;
+  text-align: center;
+  top: 4100px;
+  padding: 10px;
+  width: 1500px;
+}
+footer p{
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+}
+@media (max-width: 700px){
+  label{
+    display: block;
+    cursor: pointer;
+    left: 30px;
+  }
+  li{
+    display: grid;
+    margin-top: 40px; 
+  }
+  #toggle:checked + .navbar{
+    display: none;
+  }
+  h1{
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color:white;
+  font-size: 50px;
+  bottom: 50px;
+  left: -150px;
+}
+.madik{
+  right: 0px;
+}
+#madikosh{
+  width: 500px;
+}
+.scroll{
+  position: absolute;
+  right: 800px;
+  top: 600px;
+}
+h2{
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: black;
+  top: 1055px;
+  left: 250px;
+  text-decoration: line-through #FFDA73;
+  animation: fade-in 1.4s;
+}
+.round{
+  position: absolute;
+  bottom: -600px;
+  left: 10px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  animation: fade-in 1.4s;
+}
+h3{
+  position: absolute;
+  left: 250px;
+  top: 1100px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #4D54D8;
+  animation: fade-in 1.4s;
+}
+h4{
+  position: absolute;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  left: 250px;
+  top: 1150px;
+  font-size: 20px;
+  animation: fade-in 1.4s;
+}
+.container {
+  position: absolute;
+  height: 300px;
+  width: 600px;
+  top: 1800px;
+  left: 40px;
+  display: flex;
+  animation: fade-in 1.4s;
+}
+h5{
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: black;
+  top: 1700px;
+  left: 270px;
+  text-decoration: line-through #FFDA73;
+  font-size: 40px;
+  animation: fade-in 1.4s;
+}
+.carousel{
+  position: absolute;
+  width: 50px;
+  height: 400px;
+  left: 70px;
+  top: 2500px;
+  animation: fade-in 1.4s;
+}
+h8{
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  left: 230px;
+  top: 3340px;
+  color: black;
+  text-decoration: line-through #FFDA73;
+  font-size: 40px;
+  animation: fade-in 1.4s;
+}
+.vk {
+  position: absolute;
+  display: inline;
+  top: 3400px;
+  left: 180px;
+}
+.container2 {
+  position: absolute;
+  top: 3400px;
+  width: 500px;
+  left: 80px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-size: 15px;
+  animation: fade-in 1.4s;
+}
+.btn {
+  position: relative;
+  z-index: 2;
+  margin-top: 500px;
+  margin-left: 30px;
+  background-color: #FFDA73;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 200px;
+  height: 55px;
+}
+label{
+  border-style: none;
+}
+footer p{
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  padding: 0px;
+  left:  150px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+}
+}
